@@ -47,7 +47,7 @@ public class Scrap {
 								.replace("&#250;", "ú").replace("&#227;", "ã").replace("&#237;", "í")
 								.replace("&#243;", "ó").replace("&#224;", "à").replace("&#234;", "ê")
 								.replace("&#170;", "ª").replace("&#226;", "â").replace("&#245;", "õ")
-								.replace("&#211;", "Ó").replace("&#39;", "'")
+								.replace("&#211;", "Ó").replace("&#39;", "'").replace("&#201;", "É")
 						+ "\nPalestrante: "
 						+ nomes.getElement(contador).getText().trim().replace("&#231;", "ç").replace("&#245;", "õ")
 								.replace("&#186;", "°").replace("&#202;", "Ê").replace("&#195;", "Ã")
@@ -57,7 +57,7 @@ public class Scrap {
 								.replace("&#250;", "ú").replace("&#227;", "ã").replace("&#237;", "í")
 								.replace("&#243;", "ó").replace("&#224;", "à").replace("&#234;", "ê")
 								.replace("&#170;", "ª").replace("&#226;", "â").replace("&#245;", "õ")
-								.replace("&#211;", "Ó").replace("&#39;", "'")
+								.replace("&#211;", "Ó").replace("&#39;", "'").replace("&#201;", "É")
 						
 						+ "\nHora: " + horas.getElement(contador).getText().trim() + "\nDia:"
 						+ dias.getElement(contador).getText().trim() +" / "+mes
