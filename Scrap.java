@@ -8,7 +8,7 @@ public class Scrap {
 
 	public static String Pesquisa(String local, String mes) {
 		int ano, intMes, calcMes;
-		String local2="";
+		String local2= "";
 		Calendar data = Calendar.getInstance();
 		ano = data.get(Calendar.YEAR);
 		intMes = data.get(Calendar.MONTH)+1;
@@ -38,7 +38,7 @@ public class Scrap {
 			Elements titulos = userAgent.doc.findEvery("<p class=\"tit-descricao\">");
 			Elements dias = userAgent.doc.findEvery("<span class=\"dia\">");
 			for (int contador = 0; contador < horas.size(); contador++) {
-				resposta +=("\nTítulo: "
+				resposta +=((contador+1)+ " - Título: "
 						+ titulos.getElement(contador).getText().trim().replace("&#231;", "ç").replace("&#245;", "õ")
 								.replace("&#186;", "°").replace("&#202;", "Ê").replace("&#195;", "Ã")
 								.replace("&quot;", "'").replace("&#218;", "Ú").replace("&#244;", "ô")
@@ -70,7 +70,7 @@ public class Scrap {
 						+ "\n==========================\n\n");
 
 		} catch (JauntException e) {
-			System.err.println("Erro no arquivo do Jaunt");
+			System.err.println("Erro no arquivo do Bot");
 		}
 		return resposta;
 	}

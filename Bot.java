@@ -92,7 +92,6 @@ public class Bot {
 
 			private static String gerarResposta(String Mensagem) {
 				Mensagem = Mensagem.toLowerCase();
-				String mes;
 
 				if (Mensagem.equals("/start")) {
 			return "= Programação FAAP Acontece =\n\n" 
@@ -138,27 +137,7 @@ public class Bot {
 			
 
 		} catch (Exception p) {
-			if (Mensagem.equals("/atualrp")) {
-				return Scrap.Pesquisa("rp","0");
-			}
-			else if (Mensagem.equals("/atualsj")) {
-				return Scrap.Pesquisa("sj","0");
-			}
-			else if (Mensagem.equals("/atualsp")) {				
-				return Scrap.Pesquisa("sp","0");
-			}
-			else if (Mensagem.equals("/proximorp")) {				
-				return Scrap.Pesquisa("rp","1");
-			}
-			else if (Mensagem.equals("/proximosj")) {				
-				return Scrap.Pesquisa("sj","1");
-			}
-			else if (Mensagem.equals("/proximosp")) {				
-				return Scrap.Pesquisa("sp","1");
-			}
-			else if (Mensagem.equals("/Site")) {				
-				return "http://acontece.faap.br/eventos/acontece/";
-			}
+			return "\n Erro ao selecionar um item.\n\n";
 		}
 		if (Mensagem.equals("/keyboard")) {
 			return (" ");
